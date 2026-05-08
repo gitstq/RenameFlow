@@ -1,0 +1,9 @@
+# RenameFlow - Requirements
+# Zero dependencies! This tool uses only Python standard library.
+# No external packages required.
+
+# Development dependencies (optional)
+# pytest>=7.0.0
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.0.0

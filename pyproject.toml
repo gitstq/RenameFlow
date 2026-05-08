@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "renameflow"
+version = "1.0.0"
+description = "🔄 Lightweight Batch File Renaming Tool - 轻量级批量文件重命名工具"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "RenameFlow Team", email = "renameflow@example.com"}
+]
+keywords = ["rename", "batch", "files", "cli", "tool", "utility", "file-management"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Utilities",
+    "Topic :: Desktop Environment :: File Managers",
+]
+
+[project.scripts]
+renameflow = "renameflow:main"
+
+[project.urls]
+Homepage = "https://github.com/gitstq/RenameFlow"
+Documentation = "https://github.com/gitstq/RenameFlow#readme"
+Repository = "https://github.com/gitstq/RenameFlow"
+Issues = "https://github.com/gitstq/RenameFlow/issues"
+
+[tool.setuptools]
+py-modules = ["renameflow"]
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311', 'py312']
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
